@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.container {
+  background: url('https://i.imgur.com/xOVeYVI.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 500px;
+}
+
+.killFeedContainer {
+  top: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: rgba(0, 0, 0, .5);
+  border: 2px #b50000 solid;
+  border-radius: 6px;
+  padding: 0 10px;
+  transform: scale(1);
+  transition: .1s;
+}
+
+.assist{
+  font-family: 'Rajdhani';
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.TR {
+  font-family: 'Rajdhani';
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ecce51;
+  margin: 0 10px;
+}
+
+.CT {
+  font-family: 'Rajdhani';
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #71a6ff;
+  margin: 0 10px;
+}

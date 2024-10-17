@@ -1,0 +1,38 @@
+.specialkill.true {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.headshot.true {
+    background-image: url('https://i.imgur.com/kJhdXGH.png');
+}
+
+.wallbang.true {
+    background-image: url('https://i.imgur.com/OsKtcbP.png');
+}
+
+.noscope.true {
+    background-image: url('https://i.imgur.com/9f6HQOS.png');
+}
+
+.smoke.true {
+    width: 35px;
+    height: 35px;
+    background-image: url('https://i.imgur.com/dq4Xqua.png');
+}
+
+.blindfolded.true {
+    background-image: url('https://i.imgur.com/m1a5I2K.png');
+}
+
+.flash.true {
+    background-image: url('https://i.imgur.com/yjlAb7y.png');
+}
+
+.airkill.true {
+    position: relative;
+    margin-bottom: 25px;
+    /* background-image: url('https://i.imgur.com/JVj422W.png'); */
+}

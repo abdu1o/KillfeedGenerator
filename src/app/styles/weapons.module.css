@@ -1,6 +1,5 @@
-.weapon {
+.awp, .ak47, .famas, .galil, .m4a4, .m4a1s, .ssg {
     background-size: cover;
-    margin-left: 8px;
 }
 
 .awp {
@@ -13,4 +12,34 @@
     width: 88px;
     height: 25px;
     background-image: url('https://i.imgur.com/fZlAs4p.png');
+}
+
+.famas {
+    width: 67px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/ZGeKmW2.png');
+}
+
+.galil {
+    width: 90px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/CiqqMAZ.png');
+}
+
+.m4a4 {
+    width: 70px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/0D6YVWy.png');
+}
+
+.m4a1s {
+    width: 90px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/6U88lMz.png');
+}
+
+.ssg {
+    width: 96px;
+    height: 25px;
+    background-image: url('https://i.imgur.com/eSxUUSY.png');
 }

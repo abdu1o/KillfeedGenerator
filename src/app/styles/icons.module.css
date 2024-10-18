@@ -1,38 +1,39 @@
-.specialkill.true {
+.headshot, .wallbang, .noscope, .smoke, .blindfolded, .flash, .airkill {
     width: 25px;
     height: 25px;
     background-size: cover;
     margin-left: 10px;
 }
 
-.headshot.true {
+.headshot {
     background-image: url('https://i.imgur.com/kJhdXGH.png');
 }
 
-.wallbang.true {
+.wallbang {
     background-image: url('https://i.imgur.com/OsKtcbP.png');
 }
 
-.noscope.true {
+.noscope {
     background-image: url('https://i.imgur.com/9f6HQOS.png');
 }
 
-.smoke.true {
+.smoke {
     width: 35px;
     height: 35px;
     background-image: url('https://i.imgur.com/dq4Xqua.png');
 }
 
-.blindfolded.true {
+.blindfolded {
     background-image: url('https://i.imgur.com/m1a5I2K.png');
 }
 
-.flash.true {
+.flash {
     background-image: url('https://i.imgur.com/yjlAb7y.png');
 }
 
-.airkill.true {
-    position: relative;
+.airkill {
+    width: 30px;
+    height: 25px;
+    background-image: url('../icons/flying_kill.png');
     margin-bottom: 25px;
-    /* background-image: url('https://i.imgur.com/JVj422W.png'); */
 }

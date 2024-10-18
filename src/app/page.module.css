@@ -7,7 +7,7 @@
   height: 500px;
 }
 
-.killFeedContainer {
+.killFeedContainerDefault {
   top: 20px;
   margin: 0 auto;
   position: relative;
@@ -22,6 +22,34 @@
   transition: .1s;
 }
 
+.killFeedContainerESL {
+  top: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: rgba(0, 0, 0, .5);
+  border: 2px transparent solid;
+  border-radius: 6px;
+  padding: 0 10px;
+  transform: scale(1);
+  transition: .1s;
+}
+
+.killFeedContainerBLAST {
+  top: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: rgba(0, 0, 55, .6);
+  padding: 0 10px;
+  transform: scale(1);
+  transition: .1s;
+}
+
 .assist{
   font-family: 'Rajdhani';
   font-size: 20px;
@@ -30,20 +58,28 @@
   color: #fff;
 }
 
-.TR {
+.T_Blast, .CT_Blast, .T_default, .CT_default {
   font-family: 'Rajdhani';
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  color: #ecce51;
-  margin: 0 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.CT {
-  font-family: 'Rajdhani';
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #71a6ff;
-  margin: 0 10px;
+.T_default {
+  color: #ecce51;
 }
+
+.CT_default {
+  color: #71a6ff;
+}
+
+.T_Blast {
+  color: #ff2350;
+}
+
+.CT_Blast {
+  color: #4173ff;
+}
+

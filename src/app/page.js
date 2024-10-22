@@ -9,13 +9,13 @@ export default function Home() {
 
     const killFeedData = {
       game: "CS2",
-      colors: "BLAST",
+      colors: "default",
       events: [
         {
           killerName: "player1",
           side: "CT",
-          weapon: "famas",
-          noscope: true,
+          weapon: "ak47",
+          noscope: false,
           wallbang: true,
           smoke: true,
           headshot: true,
@@ -23,7 +23,7 @@ export default function Home() {
           airkill: true,
           flashassist: true,
           assist: {
-            name: "player2",
+            name: "",
             side: "CT"         
           }
         },

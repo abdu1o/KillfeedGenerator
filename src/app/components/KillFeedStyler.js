@@ -8,6 +8,7 @@ class KillFeedStyler {
     this.killFeedElement = document.getElementById("killFeed");
   }
 
+  // Set the container class based on the color scheme
   setContainer() {
     if (this.killFeedData?.colors) {
       const colors = this.killFeedData.colors;
@@ -20,29 +21,37 @@ class KillFeedStyler {
       this.killFeedElement.classList.add(colorClassMap[colors] || "");
       this.killFeedElement.innerHTML = "";
     }
+    return this;
   }
 
+  // Create a name element with appropriate classes
   createNameElement(name, side, colors, isAssist = false) {
     const nameElement = document.createElement("span");
     nameElement.textContent = name;
+
     const sideClass = side === "T" ? "T" : "CT";
     const colorClass = colors === "BLAST" ? "Blast" : "default";
     nameElement.classList.add(styles[`${sideClass}_${colorClass}`]);
+
     if (isAssist) {
       const plusElement = document.createElement("span");
       plusElement.textContent = " + ";
       plusElement.classList.add(styles.assist);
       this.killFeedElement.appendChild(plusElement);
     }
+
     return nameElement;
   }
 
+  // Append an element with a specific class to the kill feed
   appendElementWithClass(elementType, className) {
     const element = document.createElement(elementType);
     element.classList.add(className);
     this.killFeedElement.appendChild(element);
+    return this;
   }
 
+  // Process and append event icons
   processEventIcons(event) {
     const iconTypes = ["noscope", "smoke", "wallbang", "headshot"];
     iconTypes.forEach((iconType) => {
@@ -50,8 +59,10 @@ class KillFeedStyler {
         this.appendElementWithClass("div", icons[iconType]);
       }
     });
+    return this;
   }
 
+  // Process and append event weapons
   processEventWeapons(event) {
     if (event.airkill) {
       this.appendElementWithClass("div", icons.airkill);
@@ -59,8 +70,10 @@ class KillFeedStyler {
     if (event.weapon) {
       this.appendElementWithClass("div", weapons[event.weapon]);
     }
+    return this;
   }
 
+  // Process and append event names
   processEventNames(event) {
     if (event.killerName && event.side) {
       const nameElement = this.createNameElement(
@@ -92,20 +105,27 @@ class KillFeedStyler {
       );
       this.killFeedElement.appendChild(nameElement);
     }
+
+    return this;
   }
 
+  // Process all events in the kill feed data
   processEvents() {
-    if (!this.killFeedData?.events) return;
+    if (!this.killFeedData?.events) return this;
+
     this.killFeedData.events.forEach((event) => {
-      this.processEventNames(event);
-      this.processEventWeapons(event);
-      this.processEventIcons(event);
+      this.processEventNames(event)
+        .processEventWeapons(event)
+        .processEventIcons(event);
     });
+
+    return this;
   }
 
+  // Set up the kill feed
   setKillFeed() {
-    this.setContainer();
-    this.processEvents();
+    this.setContainer().processEvents();
+    return this;
   }
 }
 

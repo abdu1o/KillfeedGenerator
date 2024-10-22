@@ -1,45 +1,219 @@
-.awp, .ak47, .famas, .galil, .m4a4, .m4a1s, .ssg {
+.awp, .ak47, .famas, .galil, .m4a4, 
+.m4a1s, .ssg08, .aug, .sg553, .scar20, 
+.g3sg1, .mac10, .mp9, .mp7, .mp5, .ump45, 
+.p90, .bizon, .usp, .glock, .p2000, .dualBerettas, 
+.p250, .cz75, .fiveSeven, .tec9, .deagle, .revolver, 
+.nova, .xm1014, .mag7, .sawedOff, .negev, .suicide{
     background-size: cover;
 }
+
 
 .awp {
     width: 120px;
     height: 35px;
-    background-image: url('https://i.imgur.com/i5Euh7o.png');
+    background-image: url('../icons/guns/icon_awp.png');
 }
 
 .ak47 {
     width: 88px;
     height: 25px;
-    background-image: url('https://i.imgur.com/fZlAs4p.png');
+    background-image: url('../icons/guns/icon_ak47.png');
 }
 
 .famas {
     width: 67px;
     height: 25px;
-    background-image: url('https://i.imgur.com/ZGeKmW2.png');
+    background-image: url('../icons/guns/icon_famas.png');
 }
 
 .galil {
     width: 90px;
     height: 25px;
-    background-image: url('https://i.imgur.com/CiqqMAZ.png');
+    background-image: url('../icons/guns/icon_galil.png');
 }
 
 .m4a4 {
     width: 70px;
     height: 25px;
-    background-image: url('https://i.imgur.com/0D6YVWy.png');
+    background-image: url('../icons/guns/icon_m4a4.png');
 }
 
 .m4a1s {
     width: 90px;
     height: 25px;
-    background-image: url('https://i.imgur.com/6U88lMz.png');
+    background-image: url('../icons/guns/icon_m4a1s.png');
 }
 
-.ssg {
+.ssg08 {
     width: 96px;
     height: 25px;
-    background-image: url('https://i.imgur.com/eSxUUSY.png');
+    background-image: url('../icons/guns/icon_ssg08.png');
+}
+
+.aug {
+    width: 70px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_aug.png');
+}
+
+.sg553 {
+    width: 73px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_sg553.png');
+}
+
+.scar20 {
+    width: 90px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_scar20.png');
+}
+
+.g3sg1 {
+    width: 90px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_g3sg1.png');
+}
+
+.mac10 {
+    width: 35px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_mac10.png');
+}
+
+.mp9 {
+    width: 63px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_mp9.png');
+}
+
+.mp7 {
+    width: 40px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_mp7.png');
+}
+
+.mp5 {
+    width: 60px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_mp5.png');
+}
+
+.ump45 {
+    width: 70px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_ump45.png');
+}
+
+.p90 {
+    width: 60px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_p90.png');
+}
+
+.bizon {
+    width: 85px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_bizon.png');
+}
+
+.usp {
+    width: 80px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_usp.png');
+}
+
+.glock {
+    width: 50px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_glock.png');
+}
+
+.p2000 {
+    width: 35px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_p2000.png');
+}
+
+.dualBerettas {
+    width: 75px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_dualBerettas.png');
+}
+
+.p250 {
+    width: 35px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_p250.png');
+}
+
+.cz75 {
+    width: 35px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_cz75.png');
+}
+
+.fiveSeven {
+    width: 36px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_fiveSeven.png');
+}
+
+.tec9 {
+    width: 45px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_tec9.png');
+}
+
+.deagle {
+    width: 45px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_deagle.png');
+}
+
+.revolver {
+    width: 52px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_revolver.png');
+}
+
+.nova {
+    width: 105px;
+    height: 22px;
+    background-image: url('../icons/guns/icon_nova.png');
+}
+
+.xm1014 {
+    width: 100px;
+    height: 22px;
+    background-image: url('../icons/guns/icon_xm1014.png');
+}
+
+.mag7 {
+    width: 65px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_mag7.png');
+}
+
+.sawedOff {
+    width: 88px;
+    height: 18px;
+    background-image: url('../icons/guns/icon_sawedOff.png');
+}
+
+.m249 {
+    width: 80px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_m249.png');
+}
+
+.negev{
+    width: 80px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_negev.png');
+}
+
+.suicide{
+    width: 40px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_suicide.png');
 }

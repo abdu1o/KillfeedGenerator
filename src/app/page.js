@@ -14,8 +14,8 @@ export default function Home() {
         {
           killerName: "player1",
           side: "CT",
-          weapon: "ak47",
-          noscope: false,
+          weapon: "nova",
+          noscope: true,
           wallbang: true,
           smoke: true,
           headshot: true,
@@ -23,12 +23,12 @@ export default function Home() {
           airkill: true,
           flashassist: true,
           assist: {
-            name: "",
-            side: "CT"         
+            name: "asd",
+            side: "CT"
           }
         },
         {
-          victimName: "player3",
+          victimName: "player1",
           side: "T",
         }
       ]

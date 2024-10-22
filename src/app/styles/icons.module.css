@@ -6,34 +6,34 @@
 }
 
 .headshot {
-    background-image: url('https://i.imgur.com/kJhdXGH.png');
+    background-image: url('../icons/special/icon_headshot.png');
 }
 
 .wallbang {
-    background-image: url('https://i.imgur.com/OsKtcbP.png');
+    background-image: url('../icons/special/icon_wallbang.png');
 }
 
 .noscope {
-    background-image: url('https://i.imgur.com/9f6HQOS.png');
+    background-image: url('../icons/special/icon_noscope.png');
 }
 
 .smoke {
     width: 35px;
     height: 35px;
-    background-image: url('https://i.imgur.com/dq4Xqua.png');
+    background-image: url('../icons/special/icon_smokeKill.png');
 }
 
 .blindfolded {
-    background-image: url('https://i.imgur.com/m1a5I2K.png');
+    background-image: url('../icons/special/icon_blindfolded.png');
 }
 
 .flash {
-    background-image: url('https://i.imgur.com/yjlAb7y.png');
+    background-image: url('../icons/special/icon_flashAssist.png');
 }
 
 .airkill {
     width: 30px;
     height: 25px;
-    background-image: url('../icons/flying_kill.png');
+    background-image: url('../icons/special/icon_airkill.png');
     margin-bottom: 25px;
 }

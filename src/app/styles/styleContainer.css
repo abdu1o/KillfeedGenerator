@@ -51,3 +51,22 @@
     border-radius: 5px;
     background-color: #000000ad;
 }
+
+.checkbox-container{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+}
+
+.icon-label{
+    padding-left: 3px;
+    padding-right: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.checkbox{
+    width: 18px;
+    height: 18px;
+}

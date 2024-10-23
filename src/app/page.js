@@ -7,28 +7,25 @@ import StyleSelector from './components/StyleSelector';
 export default function Home() {
 
   const handleAddClick = () => {
-    const killfeedStyleSelect = document.getElementById('killfeedStyle-select');
-    const weapon = document.getElementById('weapon-killer');
-    const killerName = document.getElementById('killer-name');
-    const killerSide = document.getElementById('killer-side');
+    const selectedStyle = document.getElementById('killfeedStyle-select').value;
+    const selectedWeapon = document.getElementById('weapon-killer').value;
 
-    const assistName = document.getElementById('assist-name');
-    const assistSide = document.getElementById('assist-side');
+    const selectedKillerName = document.getElementById('killer-name').value;
+    const selectedKillerSide = document.getElementById('killer-side').value;
 
-    const victimName = document.getElementById('victim-name');
-    const victimSide = document.getElementById('victim-side');
+    const selectedAssistName = document.getElementById('assist-name').value;
+    const selectedAssistSide = document.getElementById('assist-side').value;
 
-    const selectedStyle = killfeedStyleSelect.value;
-    const selectedWeapon = weapon.value;
-
-    const selectedKillerName = killerName.value;
-    const selectedKillerSide = killerSide.value;
-
-    const selectedAssistName = assistName.value;
-    const selectedAssistSide = assistSide.value;
-
-    const selectedVictimName = victimName.value;
-    const selectedVictimSide = victimSide.value;
+    const selectedVictimName = document.getElementById('victim-name').value;
+    const selectedVictimSide = document.getElementById('victim-side').value;
+    
+    const selectedNoScope = document.getElementById('noscope').checked ? true : false;
+    const selectedWallbang = document.getElementById('wallbang').checked ? true : false;
+    const selectedSmoke = document.getElementById('smoke').checked ? true : false;
+    const selectedHeadshot = document.getElementById('headshot').checked ? true : false;
+    const selectedBlindfolded = document.getElementById('blindfolded').checked ? true : false;
+    const selectedAirkill = document.getElementById('airkill').checked ? true : false;
+    const selectedFlashAssist = document.getElementById('flashassist').checked ? true : false;
 
     const killFeedData = {
       game: "CS2",
@@ -38,13 +35,13 @@ export default function Home() {
           killerName: selectedKillerName,
           side: selectedKillerSide,
           weapon: selectedWeapon,
-          noscope: true,
-          wallbang: true,
-          smoke: true,
-          headshot: true,
-          blindfolded: true,
-          airkill: true,
-          flashassist: true,
+          noscope: selectedNoScope,
+          wallbang: selectedWallbang,
+          smoke: selectedSmoke,
+          headshot: selectedHeadshot,
+          blindfolded: selectedBlindfolded,
+          airkill: selectedAirkill,
+          flashassist: selectedFlashAssist,
           assist: {
             name: selectedAssistName,
             side: selectedAssistSide

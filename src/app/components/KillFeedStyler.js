@@ -25,7 +25,7 @@ class KillFeedStyler {
   }
 
   // Create a name element with appropriate classes
-  createNameElement(name, side, colors, isAssist = false) {
+  createNameElement(name, side, colors, isAssist = false, flashIcon = null) {
     const nameElement = document.createElement("span");
     nameElement.textContent = name;
 
@@ -38,6 +38,10 @@ class KillFeedStyler {
       plusElement.textContent = " + ";
       plusElement.classList.add(styles.assist);
       this.killFeedElement.appendChild(plusElement);
+
+      if (flashIcon) {
+        this.killFeedElement.appendChild(flashIcon);
+      }
     }
 
     return nameElement;
@@ -73,6 +77,16 @@ class KillFeedStyler {
     return this;
   }
 
+  // Process and append flash assist icon
+  processFlashAssist(event) {
+    if (event.flashassist && event.assist?.name && event.assist.side) {
+      const flashIcon = document.createElement("div");
+      flashIcon.classList.add(icons.flash);
+      return flashIcon;
+    }
+    return null;
+  }
+
   // Process and append event names
   processEventNames(event) {
     if (event.killerName && event.side) {
@@ -87,12 +101,15 @@ class KillFeedStyler {
       this.killFeedElement.appendChild(nameElement);
     }
 
+    const flashIcon = this.processFlashAssist(event);
+
     if (event.assist?.name && event.assist.side) {
       const assistElement = this.createNameElement(
         event.assist.name,
         event.assist.side,
         this.killFeedData.colors,
-        true
+        true,
+        flashIcon
       );
       this.killFeedElement.appendChild(assistElement);
     }

@@ -63,9 +63,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div id="killFeed" className={styles.killFeedContainerESL}></div>
-      <div>
-        <StyleForm handleAddClick={handleAddClick} />
-      </div>
+      <StyleForm handleAddClick={handleAddClick} />
     </div>
   );
 }

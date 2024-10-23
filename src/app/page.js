@@ -14,16 +14,16 @@ export default function Home() {
         {
           killerName: "player1",
           side: "CT",
-          weapon: "nova",
-          noscope: true,
-          wallbang: true,
-          smoke: true,
-          headshot: true,
-          blindfolded: true,
-          airkill: true,
-          flashassist: true,
+          weapon: "zeus",
+          noscope: false,
+          wallbang: false,
+          smoke: false,
+          headshot: false,
+          blindfolded: false,
+          airkill: false,
+          flashassist: false,
           assist: {
-            name: "asd",
+            name: "",
             side: "CT"
           }
         },

@@ -3,7 +3,9 @@
 .g3sg1, .mac10, .mp9, .mp7, .mp5, .ump45, 
 .p90, .bizon, .usp, .glock, .p2000, .dualBerettas, 
 .p250, .cz75, .fiveSeven, .tec9, .deagle, .revolver, 
-.nova, .xm1014, .mag7, .sawedOff, .negev, .suicide{
+.nova, .xm1014, .mag7, .sawedOff, .negev, .suicide, 
+.heGranade, .bayonet, .flip, .karambit, .m9Bayonet,
+.knifeT, .knifeCT, .burned, .zeus{
     background-size: cover;
 }
 
@@ -216,4 +218,64 @@
     width: 40px;
     height: 25px;
     background-image: url('../icons/guns/icon_suicide.png');
+}
+
+.heGranade{
+    width: 20px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_heGranade.png');
+}
+
+.bayonet{
+    width: 80px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_bayonet.png');
+}
+
+.gut{
+    width: 85px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_gut.png');
+}
+
+.flip{
+    width: 85px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_flip.png');
+}
+
+.karambit{
+    width: 80px;
+    height: 28px;
+    background-image: url('../icons/guns/icon_karambit.png');
+}
+
+.m9Bayonet{
+    width: 84px;
+    height: 28px;
+    background-image: url('../icons/guns/icon_m9Bayonet.png');
+}
+
+.knifeT{
+    width: 80px;
+    height: 20px;
+    background-image: url('../icons/guns/icon_knifeT.png');
+}
+
+.knifeCT{
+    width: 80px;
+    height: 20px;
+    background-image: url('../icons/guns/icon_knifeCT.png');
+}
+
+.burned{
+    width: 33px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_burned.png');
+}
+
+.zeus{
+    width: 35px;
+    height: 25px;
+    background-image: url('../icons/guns/icon_zeus.png');
 }

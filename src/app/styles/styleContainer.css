@@ -17,6 +17,12 @@
     border-radius: 3px;
 }
 
+.sideSelector{
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
 .input{
     width: 90%;
     font-size: 16px;
@@ -27,9 +33,21 @@
 
 .button {
     padding: 5px 10px;
+    font-size: 16px;
     border: none;
     border-radius: 3px;
     background-color: #000000;
     color: #fff;
     cursor: pointer;
+}
+
+.player-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #000000ad;
 }

@@ -2,19 +2,24 @@
 import React, { useEffect } from 'react';
 import styles from './page.module.css';
 import KillFeedStyler from './components/KillFeedStyler';
-import JsonSaver from './components/JsonSaver';
+import StyleSelector from './components/StyleSelector';
 
 export default function Home() {
-  useEffect(() => {
+
+  const handleAddClick = () => {
+    const killfeedStyleSelect = document.getElementById('killfeedStyle-select');
+    const weapon = document.getElementById('weapon-killer');
+    const selectedStyle = killfeedStyleSelect.value;
+    const selectedWeapon = weapon.value;
 
     const killFeedData = {
       game: "CS2",
-      colors: "default",
+      colors: selectedStyle,
       events: [
         {
           killerName: "player1",
           side: "CT",
-          weapon: "zeus",
+          weapon: selectedWeapon,
           noscope: false,
           wallbang: false,
           smoke: false,
@@ -36,14 +41,14 @@ export default function Home() {
     
     const killFeedStyler = new KillFeedStyler(killFeedData);
     killFeedStyler.setKillFeed();
-
-    const jsonSaver = new JsonSaver(killFeedData, 'saveJsonBtn');
-  }, []);
+  };
 
   return (
     <div className={styles.container}>
       <div id="killFeed" className={styles.killFeedContainerESL}></div>
-      <button id="saveJsonBtn">Download JSON</button>
+      <div>
+        <StyleSelector handleAddClick={handleAddClick} />
+      </div>
     </div>
   );
 }

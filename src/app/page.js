@@ -2,30 +2,32 @@
 import React, { useEffect } from 'react';
 import styles from './page.module.css';
 import KillFeedStyler from './components/KillFeedStyler';
-import StyleSelector from './components/StyleSelector';
+import StyleForm from './components/StyleForm';
 
 export default function Home() {
 
   const handleAddClick = () => {
-    const selectedStyle = document.getElementById('killfeedStyle-select').value;
-    const selectedWeapon = document.getElementById('weapon-killer').value;
+    const getValue = (id) => document.getElementById(id).value;
+    const getChecked = (id) => document.getElementById(id).checked;
 
-    const selectedKillerName = document.getElementById('killer-name').value;
-    const selectedKillerSide = document.getElementById('killer-side').value;
+    const ids = [
+      'killfeedStyle-select', 'weapon-killer', 'killer-name', 'killer-side',
+      'assist-name', 'assist-side', 'victim-name', 'victim-side'
+    ];
 
-    const selectedAssistName = document.getElementById('assist-name').value;
-    const selectedAssistSide = document.getElementById('assist-side').value;
+    const [
+      selectedStyle, selectedWeapon, selectedKillerName, selectedKillerSide,
+      selectedAssistName, selectedAssistSide, selectedVictimName, selectedVictimSide
+    ] = ids.map(getValue);
 
-    const selectedVictimName = document.getElementById('victim-name').value;
-    const selectedVictimSide = document.getElementById('victim-side').value;
-    
-    const selectedNoScope = document.getElementById('noscope').checked ? true : false;
-    const selectedWallbang = document.getElementById('wallbang').checked ? true : false;
-    const selectedSmoke = document.getElementById('smoke').checked ? true : false;
-    const selectedHeadshot = document.getElementById('headshot').checked ? true : false;
-    const selectedBlindfolded = document.getElementById('blindfolded').checked ? true : false;
-    const selectedAirkill = document.getElementById('airkill').checked ? true : false;
-    const selectedFlashAssist = document.getElementById('flashassist').checked ? true : false;
+    const checkIds = [
+      'noscope', 'wallbang', 'smoke', 'headshot', 'blindfolded', 'airkill', 'flashassist'
+    ];
+
+    const [
+      selectedNoScope, selectedWallbang, selectedSmoke, selectedHeadshot,
+      selectedBlindfolded, selectedAirkill, selectedFlashAssist
+    ] = checkIds.map(getChecked);
 
     const killFeedData = {
       game: "CS2",
@@ -62,7 +64,7 @@ export default function Home() {
     <div className={styles.container}>
       <div id="killFeed" className={styles.killFeedContainerESL}></div>
       <div>
-        <StyleSelector handleAddClick={handleAddClick} />
+        <StyleForm handleAddClick={handleAddClick} />
       </div>
     </div>
   );

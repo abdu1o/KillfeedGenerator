@@ -2,6 +2,7 @@ import React from "react";
 import WeaponSelector from "./FormComponents/WeaponSelector.js";
 import PlayerSelector from "./FormComponents/PlayerSelector.js";
 import CheckboxContainer from "./FormComponents/CheckboxContainer.js";
+import Image from "./FormComponents/ImageComponent.js";
 import "../styles/styleContainer.css";
 
 const StyleForm = ({ handleAddClick }) => {
@@ -29,6 +30,7 @@ const StyleForm = ({ handleAddClick }) => {
                 Add
                 </button>
             </form>
+            <Image />
         </div>
     );
 };

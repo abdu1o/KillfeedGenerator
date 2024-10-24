@@ -1,32 +1,55 @@
 "use client";
-import React, { useEffect } from 'react';
-import styles from './page.module.css';
-import KillFeedStyler from './components/KillFeedStyler';
-import StyleForm from './components/StyleForm';
+import React, { useEffect } from "react";
+import styles from "./page.module.css";
+import KillFeedStyler from "./components/KillFeedStyler";
+import ImageGenerator from "./components/ImageGenerator";
+import StyleForm from "./components/StyleForm";
 
 export default function Home() {
-
   const handleAddClick = () => {
-    const getValue = (id) => document.getElementById(id).value;
-    const getChecked = (id) => document.getElementById(id).checked;
+    const getValue = (id) => document.querySelector(`#${id}`).value;
+    const getChecked = (id) => document.querySelector(`#${id}`).checked;
 
     const ids = [
-      'killfeedStyle-select', 'weapon-killer', 'killer-name', 'killer-side',
-      'assist-name', 'assist-side', 'victim-name', 'victim-side'
+      "killfeedStyle-select",
+      "weapon-killer",
+      "killer-name",
+      "killer-side",
+      "assist-name",
+      "assist-side",
+      "victim-name",
+      "victim-side",
     ];
 
     const [
-      selectedStyle, selectedWeapon, selectedKillerName, selectedKillerSide,
-      selectedAssistName, selectedAssistSide, selectedVictimName, selectedVictimSide
+      selectedStyle,
+      selectedWeapon,
+      selectedKillerName,
+      selectedKillerSide,
+      selectedAssistName,
+      selectedAssistSide,
+      selectedVictimName,
+      selectedVictimSide,
     ] = ids.map(getValue);
 
     const checkIds = [
-      'noscope', 'wallbang', 'smoke', 'headshot', 'blindfolded', 'airkill', 'flashassist'
+      "noscope",
+      "wallbang",
+      "smoke",
+      "headshot",
+      "blindfolded",
+      "airkill",
+      "flashassist",
     ];
 
     const [
-      selectedNoScope, selectedWallbang, selectedSmoke, selectedHeadshot,
-      selectedBlindfolded, selectedAirkill, selectedFlashAssist
+      selectedNoScope,
+      selectedWallbang,
+      selectedSmoke,
+      selectedHeadshot,
+      selectedBlindfolded,
+      selectedAirkill,
+      selectedFlashAssist,
     ] = checkIds.map(getChecked);
 
     const killFeedData = {
@@ -46,23 +69,33 @@ export default function Home() {
           flashassist: selectedFlashAssist,
           assist: {
             name: selectedAssistName,
-            side: selectedAssistSide
-          }
+            side: selectedAssistSide,
+          },
         },
         {
           victimName: selectedVictimName,
           side: selectedVictimSide,
-        }
-      ]
+        },
+      ],
     };
-    
+
     const killFeedStyler = new KillFeedStyler(killFeedData);
     killFeedStyler.setKillFeed();
+
+    //for test
+    const testData = {
+      width: 100,
+      height: 200,
+      color: '#ffffff',
+      filename: 'test.png'
+  };
+
+    const imageGenerator = new ImageGenerator(testData);
   };
 
   return (
     <>
-      <div className={styles.container} id='mainContainer'>
+      <div className={styles.container} id="mainContainer">
         <div id="killFeed"></div>
       </div>
       <div>

@@ -84,13 +84,18 @@ export default function Home() {
 
     //for test
     const testData = {
-      width: 100,
-      height: 200,
-      color: '#ffffff',
+      width: 200,
+      height: 100,
+      color: '#242424',
       filename: 'test.png'
   };
 
-    const imageGenerator = new ImageGenerator(testData);
+  const killfeedData = {
+    weapon: '_next/static/media/icon_awp.351ee63b.png'
+    //_next/static/media/icon_awp.351ee63b.png
+  };
+
+    const imageGenerator = new ImageGenerator(testData, killfeedData);
   };
 
   return (

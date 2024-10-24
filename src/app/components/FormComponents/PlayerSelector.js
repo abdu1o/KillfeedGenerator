@@ -3,7 +3,7 @@ import "../../styles/styleContainer.css";
 
 const PlayerSelector = () => {
     return (
-        <>
+        <div className="playerSelectorContainer">
             <div className="player-container">
                 <input type="text" id="killer-name" className="input" placeholder="Killer name" />
                 <select id="killer-side" className="sideSelector">
@@ -25,7 +25,7 @@ const PlayerSelector = () => {
                     <option value="CT">CT</option>
                 </select>
             </div>
-        </>
+        </div>
     );
 };
 

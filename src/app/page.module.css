@@ -8,7 +8,7 @@
 }
 
 .killFeedContainerDefault {
-  top: 20px;
+  top: 30px;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -23,7 +23,7 @@
 }
 
 .killFeedContainerESL {
-  top: 20px;
+  top: 30px;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -38,7 +38,7 @@
 }
 
 .killFeedContainerBLAST {
-  top: 20px;
+  top: 30px;
   margin: 0 auto;
   position: relative;
   display: flex;

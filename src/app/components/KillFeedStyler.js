@@ -13,11 +13,13 @@ class KillFeedStyler {
     if (this.killFeedData?.colors) {
       const colors = this.killFeedData.colors;
       this.killFeedElement.className = "";
+
       const colorClassMap = {
         default: styles.killFeedContainerDefault,
         ESL: styles.killFeedContainerESL,
         BLAST: styles.killFeedContainerBLAST,
       };
+      
       this.killFeedElement.classList.add(colorClassMap[colors] || "");
       this.killFeedElement.innerHTML = "";
     }
